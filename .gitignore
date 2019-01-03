@@ -1,32 +1,20 @@
-# Prerequisites
-*.d
+#include "C:\Users\rauno\Desktop\C++\std_lib_facilities.h"
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+int main()
+{
+	int val1, val2;
+	
+	cout << "This programm checks even numbers between the 2 integers you enter\n";
+	cout << "Please enter the starting integer followed by 'Enter' and your ending integer\n";
+	cin >> val1 >> val2;
 
-# Precompiled Headers
-*.gch
-*.pch
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
+	do {
+		val1++;
+		if (val1 % 2 == 0) {
+			cout << val1 << " is even\n";
+		}
+	} while (val1 < val2);
+		
+	keep_window_open();
+	return 0;
+}
